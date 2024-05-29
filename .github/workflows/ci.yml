@@ -15,7 +15,7 @@ jobs:
     - run: npm install --global node-gyp
     - run: yarn apply-libuiohook-patch
     - run: yarn --frozen-lockfile
-    - run: yarn prebuild --arch x64
+    # - run: yarn prebuild --arch x64
     - run: yarn prebuild --arch=ia32
     # - run: yarn prebuild --arch arm64
     - uses: actions/upload-artifact@v3
