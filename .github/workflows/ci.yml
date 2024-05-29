@@ -17,7 +17,7 @@ jobs:
     - run: yarn apply-libuiohook-patch
     - run: yarn install
     # - run: yarn prebuild --arch x64
-    - run: yarn prebuild --arch=ia32
+    - run: yarn prebuild --arch ia32 --target 18.20.3
     # - run: yarn prebuild --arch arm64
     - uses: actions/upload-artifact@v3
       with:
